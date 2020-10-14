@@ -1,10 +1,10 @@
 #!/bin/bash -x
 echo "USER REGISTRATION"
-read -p "Enter First Name:" Fname
+read -p "Enter Last Name:" Lname
 pat='^([A-Z]{1}[A-za-z]{2,})+$'
-if [[ $Fname =~ $pat ]]
+if [[ $Lname =~ $pat ]]
 then
-        echo "valid"
+        echo "$Lname valid"
 else
-        echo "Invalid"
+        echo "$Lname Invalid"
 fi
