@@ -17,7 +17,7 @@ else
         echo "$Lname Invalid"
 fi
 read -p "Enter Email:" Email
-pat='^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,4}([.][a-z]{2})*$'
+pat='^[a-zA-Z0-9]+([.+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,4}([.,])*([a-z]{2,3})*$'
 if [[ $Email =~ $pat ]]
 then
         echo "$Email valid"
