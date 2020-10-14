@@ -32,3 +32,11 @@ then
 else
         echo "$Mobile Invalid"
 fi
+read -p "Enter Password:" pass
+pat='^[0-9A-Za-z]{8}$'
+if [[ $pass =~ $pat ]]
+then
+        echo "$pass valid"
+else
+        echo "$pass Invalid"
+fi
